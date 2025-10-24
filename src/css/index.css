@@ -1,0 +1,36 @@
+ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  padding: 50px 0;
+  margin: 0;
+}
+
+.nav-gal {
+  display: inline-block;
+  padding: 12px 28px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  font-size: 28px;
+  color: white;
+  text-decoration: none;
+  border-radius: 12px;
+  background: linear-gradient(135deg, #ff6b6b, #ffd93d, #6bcf7f, #4d96ff);
+  background-size: 300% 300%;
+  animation: gradientShift 4s ease infinite;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+@keyframes gradientShift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.nav-gal:hover{
+  transform: scale(1.05);
+  box-shadow: 0 6px 20px rgba(255, 107, 107, 0.4);
+  animation-duration: 2s;
+  color: rgb(98, 95, 95);
+}
